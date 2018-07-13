@@ -27,6 +27,8 @@ function NameOfSpouse(){
     //return y */
 }
 function mash(){ 
-    return "You will live in a " + getHome() +" , and you will have " + getChildrenCount() + " kids,and you'll drive a " +getCar() + "and your wife name will be"+ NameOfSpouse()
+    return "You will live in a " + getHome() +" , and you will have " + getChildrenCount() + " kids,and you'll drive a " +getCar() + "and your wife name will be "+ NameOfSpouse()
 }
-console.log(mash());
+if(process.argv[2] != undefined && process.argv[3] != undefined && process.argv[4] != undefined && process.argv[5] != undefined){
+    console.log(mash());
+}
