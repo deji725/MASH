@@ -26,9 +26,18 @@ function NameOfSpouse(){
     return getSpouseq
     //return y */
 }
+function Career(){
+    //var y = process.argv[2]
+    var d= ["Teacher", "Engineer", "Police", "Lawyer", process.argv[6],"Doctor",];
+    var getCareerq = d[Math.floor(Math.random()*d.length)];
+    return getCareerq
+    //return y */
+}
 function mash(){ 
     return "You will live in a " + getHome() +" , and you will have " + getChildrenCount() + " kids,and you'll drive a " +getCar() + "and your wife name will be "+ NameOfSpouse()
 }
-if(process.argv[2] != undefined && process.argv[3] != undefined && process.argv[4] != undefined && process.argv[5] != undefined){
+if(process.argv[2] != undefined && process.argv[3] != undefined && process.argv[4] != undefined && process.argv[5] != undefined && process.argv[6] != undefined){
     console.log(mash());
+}else{
+    console.log("Please input all choices before proceeding!")
 }
